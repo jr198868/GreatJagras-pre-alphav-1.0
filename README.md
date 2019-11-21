@@ -1,4 +1,4 @@
-# 16S-rRNA-amplicon-sequencing-characterization-of-biosolids-from-a-wastewater-treatment-plant-and-hum
+## 16S-rRNA-amplicon-sequencing-characterization-of-biosolids-from-a-wastewater-treatment-plant-and-hum
 
 library(dada2); 
 packageVersion("dada2")
@@ -6,11 +6,11 @@ packageVersion("dada2")
 path<-"C:/Users/Administrator.000/Desktop/USA Stool Microbial 16S rRNA dataset/Fecal 16S rRNA analysis/SRR22" # CHANGE ME to the directory containing the fastq files after unzipping.
 list.files(path)
 
-# Forward and reverse fastq filenames have format: SAMPLENAME_R1_01.fastq and SAMPLENAME_R2_001.fastq
+### Forward and reverse fastq filenames have format: SAMPLENAME_R1_01.fastq and SAMPLENAME_R2_001.fastq
 fnFs <- sort(list.files(path, pattern="_1.fastq", full.names = TRUE))
 fnRs <- sort(list.files(path, pattern="_2.fastq", full.names = TRUE))
 
-# Extract sample names, assuming filenames have format: SAMPLENAME_XXX.fastq
+### Extract sample names, assuming filenames have format: SAMPLENAME_XXX.fastq
 sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
 
 plotQualityProfile(fnFs[1:21])
