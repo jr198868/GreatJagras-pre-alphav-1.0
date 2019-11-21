@@ -30,6 +30,7 @@ out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, maxN=0,truncLen = c(240,140), m
 #On Windows set multithread=FALSE
 
 #Filtering parameters of biosolid microbiomes
+
 #out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, maxN=0,truncLen = c(290,256), maxEE=c(2,2), truncQ=2, trimLeft=33, rm.phix=TRUE, compress=TRUE, multithread=FALSE) 
 #On Windows set multithread=FALSE
 
