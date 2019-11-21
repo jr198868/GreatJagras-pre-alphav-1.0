@@ -20,16 +20,18 @@ filt_path <- file.path(path, "filtered") # Place filtered files in filtered/ sub
 filtFs <- file.path(filt_path, paste0(sample.names, "_F_filt.fastq.gz"))
 filtRs <- file.path(filt_path, paste0(sample.names, "_R_filt.fastq.gz"))
 
+#### #This is the filtering parameters of American intestinal microbiomes
 out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, maxN=0,truncLen = c(240,140), maxEE=c(2,2), truncQ=2, trimLeft=c(35,21), rm.phix=TRUE, compress=TRUE, multithread=FALSE) # On Windows set multithread=FALSE
-#This is the filtering parameters of American intestinal microbiomes
+
 
 #Filtering parameters of Chinese intestinal microbiomes
-#out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, maxN=0,truncLen = c(275,250), maxEE=c(2,2), truncQ=2, trimLeft=c(19,20), rm.phix=TRUE, compress=TRUE, multithread=FALSE) 
-#### #On Windows set multithread=FALSE
 
-####Filtering parameters of biosolid microbiomes
-####out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, maxN=0,truncLen = c(290,256), maxEE=c(2,2), truncQ=2, trimLeft=33, rm.phix=TRUE, compress=TRUE, multithread=FALSE) 
-#### #On Windows set multithread=FALSE
+#out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, maxN=0,truncLen = c(275,250), maxEE=c(2,2), truncQ=2, trimLeft=c(19,20), rm.phix=TRUE, compress=TRUE, multithread=FALSE) 
+#On Windows set multithread=FALSE
+
+#Filtering parameters of biosolid microbiomes
+#out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, maxN=0,truncLen = c(290,256), maxEE=c(2,2), truncQ=2, trimLeft=33, rm.phix=TRUE, compress=TRUE, multithread=FALSE) 
+#On Windows set multithread=FALSE
 
 
 plotQualityProfile(filtFs[1:3])
