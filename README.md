@@ -1,12 +1,6 @@
 # JellyShrimp
 > JellyShrimp is inspired by the dada2 pipeline, which was developed during Ran Jing's PhD work at University of Maryland College Park. The core component of the DADA2 data pipeline is now integrated into python scripts as a wrapper function. It is ​focusing on simplicity and ease of use. JellyShrimp can run on OS X and Linux operating systems.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-One to two paragraph statement about your product and what it does.
-
 ![](header.png)
 
 ## Installation
@@ -15,12 +9,6 @@ OS X & Linux:
 
 ```sh
 npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
 ```
 
 ## Usage example
