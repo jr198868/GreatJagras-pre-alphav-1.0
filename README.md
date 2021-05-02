@@ -1,5 +1,5 @@
-# Product Name
-> Short blurb about what your product does.
+# JellyShrimp
+> JellyShrimp is inspired by the dada2 pipeline, which was developed during Ran Jing's PhD work at University of Maryland College Park. The core component of the DADA2 data pipeline is now integrated into python scripts as a wrapper function. It is ​focusing on simplicity and ease of use. JellyShrimp can run on OS X and Linux operating systems.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
